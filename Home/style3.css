@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#mainDiv {
+  background-color: #333d79ff;
+  padding: 50px;
+  min-height: 100vh;
+  width: 100%;
+}
+#mainDiv > form > input {
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: rgb(255, 244, 248);
+  color: #333d79ff;
+  font-weight: 500;
+  border: 1px solid #333d79ff;
+}
+#mainDiv > form > input::placeholder {
+  color: #333d79ff;
+}
+#mainDiv > form > input:focus {
+  outline: none;
+}
+#mainDiv > form > button {
+  cursor: pointer;
+  padding: 10px 22px;
+  background-color: rgb(251, 216, 226);
+  color: #333d79ff;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  font-size: 15.5px;
+  border: 2px solid rgb(251, 216, 226);
+  font-weight: 500;
+}
+#mainDiv > form > button:hover {
+  transition: all 0.5s;
+  background-color: #333d79ff;
+  color: rgb(251, 216, 226);
+}
+#mainDiv > h2 {
+  margin-top: 30px;
+  color: rgb(251, 216, 226);
+}
+#container,
+#container2,
+#container3,
+#container4,
+#container5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container > div,
+#container2 > div,
+#container3 > div,
+#container4 > div,
+#container5 > div {
+  background-color: rgb(251, 216, 226);
+  cursor: pointer;
+  width: 170px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333d79ff;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#container > div > img,
+#container2 > div > img,
+#container3 > div > img,
+#container4 > div > img,
+#container5 > div > img {
+  width: 150px;
+  height: 200px;
+}
+#container > div > p,
+#container2 > div > p,
+#container3 > div > p,
+#container4 > div > p,
+#container5 > div > p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#result {
+  margin-top: 50px;
+  background-color: rgb(251, 216, 226);
+  height: auto;
+  border-radius: 5px;
+  color: #333d79ff;
+  font-weight: 500;
+  padding: 30px;
+}
+#result > div > h2 {
+  margin-bottom: 15px;
+}
+#result > div > img {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+#result > div > p {
+  margin-bottom: 10px;
+}
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 60px auto 0 auto;
+}
+#buttons > button {
+  text-decoration: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: rgb(251, 216, 226);
+  color: #333d79ff;
+  font-size: 18px;
+  border: none;
+  font-weight: 500;
+}
+.none {
+  display: none !important;
+}

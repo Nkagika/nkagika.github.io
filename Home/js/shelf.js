@@ -1,11 +1,9 @@
 $(document).ready(function() {
     var item;
     var showList = document.getElementById("output-list");
-    //the bookurl from my custom bookshelf
     var bookUrl = "https://www.googleapis.com/books/v1/users/112873665643904177188/bookshelves/1001/volumes";
    
   
-    //incase the img not present: the placeholder from placeholder.com
     var pHolder = '<img src="https://via.placeholder.com/150">';
     
   
@@ -23,7 +21,6 @@ $(document).ready(function() {
                 alert("Error collecting Results!.. Retry")
               }
               else {
-                //animating the search-box
                 $("#title").animate({'margin-top': '5px'}, 1000); 
                 
                 $(".book-list").css("visibility", "visible");
@@ -41,11 +38,9 @@ $(document).ready(function() {
      function showResults(response) {
         console.log(response);
 
-      // Display 
   
         for (var i = 0; i < response.items.length; i+=1) {
   
-          //for card each
           item = response.items[i];
           title1 = item.volumeInfo.title;
           authors=item.volumeInfo.authors;
@@ -67,7 +62,6 @@ $(document).ready(function() {
   
      
      function outputforCard(bookImg, title, bookIsbn,authors, publisher,page) {
-       //display the small image of the book and a title with the link to the next page
        var displayUrl = 'viewbook-details.html?isbn='+bookIsbn; 
        var displayCard = `<div class="col-lg-6">
          <div class="card" style=" margin-left:40%; width: 700px;">
@@ -97,14 +91,12 @@ $(document).ready(function() {
        return displayCard;
      }
   
-     //Alert for empty search box
      function funError() {
        alert("search box  cannot be empty!. Write something")
      }
   
   });
   
-  //top navbar toggle
   function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
